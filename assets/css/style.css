@@ -1,0 +1,48 @@
+body {
+	background-image: url(http://cdn.wallpapersafari.com/82/61/wCPZ3Y.jpg);
+}
+
+#gamePlay {
+	display: none;
+}
+
+#results {
+	display:none;
+}
+
+.buttons {
+	text-align: center;
+}
+
+#show-timeRemaining {
+	text-align: center;
+}
+
+h1 {
+	text-align: center;
+	color: white;
+}
+
+#start {
+	text-align: center;
+}
+
+p {
+	color: red;
+}
+
+label {
+	color: white;
+}
+
+#btnSubmit {
+	margin-bottom: 20px;
+	width: 200px;
+	height: 60px;
+}
+
+input {
+	font-size: 20px;
+	background: #1a1aff;
+	color: white;
+}
