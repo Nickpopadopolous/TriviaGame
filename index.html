@@ -3,15 +3,17 @@
 <head>
   <title>Trivia Game</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  link rel="stylesheet" type="text/css" href="assets/css/reset.css">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script type="text/javascript" src=assets/javascript/app.js></script>
 </head>
 <body>
-<h1>Kingdom Hearts Trivia!</h1>
-<div id="start" >
-  <button  id="buttonStart" >Start</button>
+<h1 id="main" class="jumbotron">Kingdom Hearts Trivia!</h1>
+<img id="picture" src="assets/images/kingdom.png">
+<div class="jumbotron" id="start" >
+  <button id="buttonStart" >Start</button>
   </div>
 
 <div id="gamePlay">
@@ -33,99 +35,99 @@
     <br>
     <br>
 
-  <p>The form below contains three inline radio buttons:</p>
+  <p>What is the name of the fighting weapon?</p>
 
     <label class="radio-inline">
-      <input type="radio" name="question2" value="false">Option 1
+      <input type="radio" name="question2" value="false">Keysword
     </label>
     <label class="radio-inline">
-      <input type="radio" name="question2" value="true">Option 2
+      <input type="radio" name="question2" value="true">Keyblade
     </label>
     <label class="radio-inline">
-      <input type="radio" name="question2" value="false">Option 3
+      <input type="radio" name="question2" value="false">Keyknife
     </label>
   <br>
   <br>
 
-  <p>The form below contains three inline radio buttons:</p>
+  <p>Who is the main antagonist in the first Kingdom Hearts?</p>
 
     <label class="radio-inline">
-      <input type="radio" name="question3" value="true">Option 1
+      <input type="radio" name="question3" value="true">Ansem 
     </label>
     <label class="radio-inline">
-      <input type="radio" name="question3" value="false">Option 2
+      <input type="radio" name="question3" value="false">Jafar
     </label>
     <label class="radio-inline">
-      <input type="radio" name="question3" value="false">Option 3
+      <input type="radio" name="question3" value="false">Heartless
     </label>
     <br>
     <br>
 
-  <p>The form below contains three inline radio buttons:</p>
+  <p>Which character is not one of Sora's sidekicks?</p>
 
     <label class="radio-inline">
-      <input type="radio" name="question4" value="false">Option 1
+      <input type="radio" name="question4" value="false">Goofy
     </label>
     <label class="radio-inline">
-      <input type="radio" name="question4" value="true">Option 2
+      <input type="radio" name="question4" value="true">Mickey
     </label>
     <label class="radio-inline">
-      <input type="radio" name="question4" value="false">Option 3
+      <input type="radio" name="question4" value="false">Donald
     </label>
     <br>
     <br>
 
-  <p>The form below contains three inline radio buttons:</p>
+  <p>Who is Sora's Nobody?</p>
 
     <label class="radio-inline">
-      <input type="radio" name="question5" value="false">Option 1
+      <input type="radio" name="question5" value="false">Xemnas
     </label>
     <label class="radio-inline">
-      <input type="radio" name="question5" value="false">Option 2
+      <input type="radio" name="question5" value="false">Axel
     </label>
     <label class="radio-inline">
-      <input type="radio" name="question5" value="true">Option 3
+      <input type="radio" name="question5" value="true">Roxas
     </label>
     <br>
     <br>
 
-  <p>The form below contains three inline radio buttons:</p>
+  <p>Which of these characters has an alternate costume during the game?</p>
 
     <label class="radio-inline">
-      <input type="radio" name="question6" value="false">Option 1
+      <input type="radio" name="question6" value="false">Simba
     </label>
     <label class="radio-inline">
-      <input type="radio" name="question6" value="true">Option 2
+      <input type="radio" name="question6" value="true">Jack Skellington
     </label>
     <label class="radio-inline">
-      <input type="radio" name="question6" value="false">Option 3
+      <input type="radio" name="question6" value="false">Peter Pan
     </label>
     <br>
     <br>
 
-  <p>The form below contains three inline radio buttons:</p>
+  <p>What was the food item Axel, Roxas and Xion eat on Twilight Town Clock Tower?</p>
 
     <label class="radio-inline">
-      <input type="radio" name="question7" value="false">Option 1
+      <input type="radio" name="question7" value="false">Roast Beef Sandwich 
     </label>
     <label class="radio-inline">
-      <input type="radio" name="question7" value="false">Option 2
+      <input type="radio" name="question7" value="false">Peanuts
     </label>
     <label class="radio-inline">
-      <input type="radio" name="question7" value="true">Option 3
+      <input type="radio" name="question7" value="true">Sea-salt Ice Cream
     </label>
     <br>
     <br>
 
-  <p>The form below contains three inline radio buttons:</p>
+  <p>Which of these weapons were not in both Kingdom Hearts one and two?</p>
     <label class="radio-inline">
-      <input type="radio" name="question8" value="false">Option 1
+      <input type="radio" name="question8" value="false">Oblivion
     </label>
     <label class="radio-inline">
-      <input type="radio" name="question8" value="true">Option 2
+      <input type="radio" name="question8" value="true">Lionheart
     </label>
     <label class="radio-inline">
-      <input type="radio" name="question8" value="false">Option 3
+      <input type="radio" name="question8" value="false">Kingdom Key
     </label>
   </form>
     <br>
@@ -137,11 +139,12 @@
   </div>
 
   <div id="results">
-    <p>Correct Answers: <span id="numCorrect"></span></p>
+    <p id="thisAnswer">Correct Answers: <span id="numCorrect"></span></p>
     <br>
-    <p>Incorrect Answers: <span id="numIncorrect"></span></p>
+    <p id="thisAnswer">Incorrect Answers: <span id="numIncorrect"></span></p>
     <br>
-    <p>Unanswered Questions: <span id="numUnanswered"></span></p>
+    <p id="thisAnswer">Unanswered Questions: <span id="numUnanswered"></span></p>
+    <img id="soraImage" src="assets/images/sora.png">
   </div>
 
 

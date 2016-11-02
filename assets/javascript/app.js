@@ -1,4 +1,4 @@
-var timeRemaining = 30;
+var timeRemaining = 31;
 var wins = 0;
 var losses = 0;
 var unanswered = 0;
@@ -8,6 +8,7 @@ $(document).ready(function() {
         $('#start').hide();
         $('#results').hide();
         $('#gamePlay').show();
+        $('#picture').hide();
         run();
     });
 
@@ -46,7 +47,7 @@ function onSubmit() {
     $('#numIncorrect').html(losses);
     $('#numUnanswered').html(unanswered);
 }
-
+//Determine where point goes to
 function determineAnswer(questionId) {
    var answer = jQuery('[name="'+questionId+'"]:checked').val();
 
