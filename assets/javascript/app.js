@@ -1,4 +1,4 @@
-//var timeRemaining = 5;
+var timeRemaining = 30;
 var wins = 0;
 var losses = 0;
 var unanswered = 0;
